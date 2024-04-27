@@ -36,6 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  max-width: 16em;
 
   border: 5px solid white;
   border-radius: 30px;

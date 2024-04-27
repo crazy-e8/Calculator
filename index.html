@@ -3,9 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/body-style.css" />
+    <link rel="stylesheet" href="styles/header-style.css" />
+    <script
+      src="https://kit.fontawesome.com/e062e11abd.js"
+      crossorigin="anonymous"></script>
+    <script src="scripts/keys-functionality.js"></script>
+    <script src="scripts/operations.js"></script>
     <title>Calculator</title>
   </head>
   <body>
-    <h1>Calculator</h1>
+    <div class="wrapper">
+      <header>
+        <div class="equation-wrapper"></div>
+        <div class="result-wrapper"></div>
+      </header>
+
+      <main>
+        <div class="keys-wrapper">
+          <div class="keys-operators-top">
+            <button class="key" id="clear-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+            <button class="key" id="delete">
+              <i class="fa-solid fa-eraser"></i>
+            </button>
+            <button class="key" id="modulo">%</button>
+            <button class="key" id="divide">/</button>
+          </div>
+          <div class="board">
+            <div class="keys-numbers">
+              <button class="key" id="number9">9</button>
+              <button class="key" id="number8">8</button>
+              <button class="key" id="number7">7</button>
+              <button class="key" id="number6">6</button>
+              <button class="key" id="number5">5</button>
+              <button class="key" id="number4">4</button>
+              <button class="key" id="number3">3</button>
+              <button class="key" id="number2">2</button>
+              <button class="key" id="number1">1</button>
+              <button class="key" id="dot">.</button>
+              <button class="key" id="number0">0</button>
+            </div>
+            <div class="keys-operators-left">
+              <button class="key" id="multiply">x</button>
+              <button class="key" id="substract">-</button>
+              <button class="key" id="add">+</button>
+              <button class="key" id="equals">=</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p class="credits">
+        <a href="https://github.com/crazy-e8/Calculator">Github Repo</a> |
+        <a href="https://github.com/crazy-e8">Krazy 8</a>
+      </p>
+    </footer>
   </body>
 </html>

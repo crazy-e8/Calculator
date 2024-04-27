@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.3em;
+}
+
+.equation-wrapper,
+.result-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.equation-wrapper {
+  color: rgb(159, 159, 159);
+  font-size: medium;
+  height: 30px;
+}
+
+.result-wrapper {
+  color: black;
+  font-size: 1.3em;
+  height: 50px;
+}

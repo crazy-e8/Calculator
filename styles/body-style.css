@@ -96,6 +96,10 @@ body {
   color: #0d4f9d;
 }
 
+#clear {
+  flex: 1;
+}
+
 .key {
   color: black;
   border: none;

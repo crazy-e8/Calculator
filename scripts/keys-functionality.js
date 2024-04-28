@@ -4,6 +4,7 @@ const operatorKeys = document.querySelectorAll(".operator");
 const resultWrapper = document.querySelector(".result-wrapper");
 const clearButton = document.querySelector("#clear");
 const equalButton = document.querySelector("#equals");
+const deleteButton = document.querySelector("#delete");
 
 /*
 When clicking on one of the number keys,
@@ -32,4 +33,11 @@ equalButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   resultWrapper.textContent = "";
+});
+
+deleteButton.addEventListener("click", () => {
+  resultWrapper.textContent = resultWrapper.textContent.substring(
+    0,
+    resultWrapper.textContent.length - 1
+  );
 });
